@@ -4,9 +4,8 @@
 
 import pandas as pd
 import numpy as np
-import seaborn
 import matplotlib.pyplot as plt
-import Statsmodels
+import statsmodels
 
 
 df = pd.read_csv("gapminder.csv", low_memory = False, index_col = 0)
