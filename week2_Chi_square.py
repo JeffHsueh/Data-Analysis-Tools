@@ -102,7 +102,7 @@ df3['badvsdecent'] = df3['income4groups'].map(recode4)
 ct6 = pd.crosstab(df3['polityscore'], df3['badvsdecent'])
 colsum= ct6.sum(axis=0)
 colpct = ct6/colsum
-print ('chi-square value, p value, expected counts')
+print ('Bad vs. Decent\nchi-square value, p value, expected counts')
 cs6= scipy.stats.chi2_contingency(ct6)
 print (cs6)
 
